@@ -14,7 +14,7 @@ This is a solution to the [Login Screen challenge on Web Developer Mentor](https
 ### Links
 
 - Solution URL to repository: [Solution to Login Screen challenge Repository](https://github.com/Pazispeace/WebDeveloper-Challenges/tree/gh-pages/login-screen)
-- Live Site URL: [Solution to Login Screen of Web Developer mentor live](https://pazispeace.github.io/WebDeveloper-Challenges/login-screen/)
+- Live Site URL: [Solution to Login Screen - Web Developer mentor - live](https://pazispeace.github.io/WebDeveloper-Challenges/login-screen/)
 
 ### Built with
 
