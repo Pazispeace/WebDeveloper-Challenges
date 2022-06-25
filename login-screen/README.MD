@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo landing page with two column layout solution
+# Web Developer Mentor - Login Screen
 
 This is a solution to the [Login Screen challenge on Web Developer Mentor](https://webdevelopermentor.com/challenges/login-screen). WebDeveloperMentor provides you a great stage where anyone can enhance your web development skills. Practice over the identical real world project because that's the correct way.
 
