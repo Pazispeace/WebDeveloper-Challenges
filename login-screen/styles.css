@@ -1,0 +1,282 @@
+/* ********** Custom Properties ********** */
+:root {
+  /* primary */
+  --Primary-color: #000000;
+  --Primary--second-color: #C4C4C4;
+  /* Accent */
+  /* Neutral */
+
+  --background-color: #ebfbff;
+
+  --form-placeholder-color: #bfbfbf;
+  --form-success-color: #4caf50;
+  --form-error-color: #f44336;
+
+  --text-color: var(--Primary-color);
+  --link-color: var(--Primary-color);
+
+  --font-primary: 'Roboto', sans-serif;
+  --regular: 400;
+  --bold: 700;
+  --main-text-size: 1.25rem;
+  --smaller-text-size: 1rem;
+  --max-mobile-width: 25.875rem;
+  --max-lg-width: 1440px;
+}
+
+/* ********** Reset ********** */
+html {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+  font-size: var(--main-text-size);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ********** Components ********** */
+
+/* ********** Utilities ********** */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-mobile-width);
+}
+
+.section {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (min-width: 64em) {
+  .container-lg {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-lg-width);
+  }
+
+  .full-lg-screen {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .text-lg-center {
+    text-align: center;
+  }
+
+  .text-lg-left {
+    text-align: left;
+  }
+
+  .text-lg-right {
+    text-align: right;
+  }
+}
+
+/* ********** Site Styles ********** */
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form input,
+.login-form button,
+.login-social-link {
+  width: 80%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: thin solid #ccc;
+  border-radius: 0.3rem;
+  border-width: 2px;
+}
+
+.login-form input::placeholder {
+  color: #0000004c;
+}
+
+.login-form button {
+  margin-bottom: 2rem;
+  font-weight: var(--bold);
+  font-size: var(--smaller-text-size);
+  color: #fff;
+  background-color: var(--Primary-color);
+  border: 2px solid var(--Primary-color);
+  transition: all 250ms;
+}
+
+.login-form button:hover,
+.login-form button:focus {
+  background-color: var(--Primary--second-color-color);
+  color: var(--Primary-color);
+  cursor: pointer;
+}
+
+.login-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-weight: var(--bold);
+  font-size: var(--smaller-text-size);
+  text-decoration: none;
+}
+
+.login-social-link:hover {
+  border: 2px solid var(--Primary-color);
+}
+
+.login-social-link img {
+  display: inline-block;
+  max-width: 1.5rem;
+}
+
+.login-social>p {
+  font-size: var(--smaller-text-size);
+}
+
+.right-pane {
+  display: none;
+}
+
+.separation {
+  position: relative;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0000004c;
+}
+
+.separation::before,
+.separation::after {
+  content: "";
+  position: absolute;
+
+  background-color: #0000004c;
+  height: 1px;
+  width: 40%;
+}
+
+.separation::before {
+  top: 50%;
+  left: 0;
+}
+
+.separation::after {
+  top: 50%;
+  right: 0;
+}
+
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: var(--smaller-text-size);
+}
+
+.thanks>img {
+  max-width: 3rem;
+  margin-bottom: 2rem;
+}
+
+.thanks>img+p {
+  font-weight: var(--bold);
+}
+
+
+
+@media screen and (min-width: 64em) {
+  .right-pane {
+    display: initial;
+    width: 45%;
+    max-height: 100vh;
+  }
+
+  .section {
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+}
