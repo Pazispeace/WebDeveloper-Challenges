@@ -1,6 +1,6 @@
 # Web Developer Mentor Challenges
 
-Repository of challenges solved by @Pazispeace from webdevelopermentor.com
+Repository of challenges solved by @Pazispeace from [](webdevelopermentor.com)
 
 ## Challenges and solutions
 
